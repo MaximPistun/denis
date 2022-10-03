@@ -42,8 +42,8 @@ if(allCards.length > 0){
                 rollSlider();
             });
 
-            card.addEventListener('touchstart',  handleTouchStart, false);
-            card.addEventListener('touchmove',handleTouchMove, false);
+            sliderLine.addEventListener('touchstart',  handleTouchStart, false);
+            sliderLine.addEventListener('touchmove',handleTouchMove, false);
 
             let x1 = null;
 
@@ -76,17 +76,12 @@ if(allCards.length > 0){
                         rollSlider();
                     };
                 x1 = null;
-                y1 = null
+         
             }
             function rollSlider(){
                 sliderLine.style.transform = 'translate(-' + count * width + 'px)'
             }
 
-            // function rollSlider(){
-            //     sliderLine.style.transform = 'translate(-' + count * width + 'px)'
-
-
-            // };
         }
 
     }
